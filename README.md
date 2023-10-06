@@ -1,12 +1,14 @@
-
+消耗CPU资源：在CPU占用率图标中画正弦曲线😄
 
 screen -S keeplive
-./cpu_consume-linux-amd64 > /dev/null
+
 
 ###	运行程序
 ```bash
 # 前台运行程序
-./cpu_consume-linux-amd64
+./cpu_consume
+# 或
+./cpu_consume > /dev/null
 
 # 前台运行需要一直开着终端窗口，可以在 Screen 中运行程序，以实现断开终端窗口后一直运行。
 # 创建 Screen 终端
