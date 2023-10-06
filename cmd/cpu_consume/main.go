@@ -31,10 +31,10 @@ func taskSchedule_1() {
 			timeNow := time.Now().Hour()
 			if timeNow < 6 && timeNow > 0 {
 				task(timeNow)
-				time.Sleep(10 * time.Minute)
+				time.Sleep(53 * time.Minute)
 			} else {
 				task(timeNow)
-				time.Sleep(30 * time.Minute)
+				time.Sleep(71 * time.Minute)
 			}
 
 			wgTask.Done()
@@ -50,7 +50,7 @@ func task(id int) {
 	// 通过设置step来决定一个60秒的统计窗口展示几个正弦函数周期
 	var step float64 = 0.1
 	for j = 0.0; j < 8*2*math.Pi; j += step {
-		compute(1000.0, math.Sin(j)/2.0+0.5, id)
+		compute(1000.0, math.Sin(j)/2.0+0.38, id)
 	}
 }
 
